@@ -85,6 +85,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.mingsonglaoshi.com/zhishi/duifang-you-xinhuan.html</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.mingsonglaoshi.com/llms.txt</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
