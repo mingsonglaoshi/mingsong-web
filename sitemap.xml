@@ -73,6 +73,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.mingsonglaoshi.com/zhishi/qianren-buhui-xiaoxi.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mingsonglaoshi.com/zhishi/qianren-shuo-zuo-pengyou.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.mingsonglaoshi.com/llms.txt</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
