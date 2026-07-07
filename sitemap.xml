@@ -103,6 +103,24 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.mingsonglaoshi.com/zhishi/yidi-fenshou-wanhui.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mingsonglaoshi.com/zhishi/tisheng-xiyinli.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mingsonglaoshi.com/zhishi/liaotian-bu-baolu-xuqiugan.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.mingsonglaoshi.com/feed.xml</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
