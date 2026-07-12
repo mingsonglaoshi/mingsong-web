@@ -644,8 +644,8 @@
     <strong>情感挽回</strong>，简单说就是通过理解分手的真正原因、调整沟通方式和重建吸引力，让对方重新对你产生好感和信任的过程。不是套路，是修复。
   </p>
   <div class="hero-actions">
-    <a href="about.html" class="btn btn-primary">💬 免费聊聊你的情况</a>
-    <a href="faq.html" class="btn btn-outline">先看看常见问题</a>
+    <a href="tool/wanhui-zice.html" class="btn btn-primary">🔍 先测测还能不能挽回</a>
+    <a href="about.html" class="btn btn-outline">💬 直接聊聊你的情况</a>
   </div>
   <div class="hero-trust">
     <span>1,000+ 真实案例</span><span class="dot"></span>
@@ -1098,13 +1098,16 @@
 <!-- ===== Bottom CTA ===== -->
 <div class="cta-section">
   <div class="cta-box">
-    <h2>等你准备好了，我就在这里</h2>
-    <p>不着急，也不用准备什么。把你现在最困扰的事告诉我，我帮你看看方向。第一次聊，不收钱。</p>
-    <div class="wechat-box" id="wechatBox" style="cursor:pointer" onclick="copyWechat()">
-      💬 fccj20180520
-      <span class="copy-hint">（点击复制微信号）</span>
+    <h2>不确定还有没有机会？</h2>
+    <p>花3分钟做完10道题，帮你判断挽回可能性和方向。<br>或者直接把你的情况告诉我，第一次聊不收钱。</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:20px">
+      <a href="tool/wanhui-zice.html" class="btn-light">🔍 先做个免费评估</a>
+      <div class="wechat-box" id="wechatBox" style="cursor:pointer" onclick="copyWechat()">
+        💬 fccj20180520
+        <span class="copy-hint">（点击复制微信号）</span>
+      </div>
     </div>
-    <a href="about.html" class="btn-light">详细了解我是谁 →</a>
+    <a href="about.html" class="btn-light" style="background:transparent;border:1px solid rgba(255,255,255,0.4);color:#fff">详细了解我是谁 →</a>
     <p class="note">每个人都有自己的节奏。不着急，慢慢来。</p>
   </div>
 </div>
@@ -1146,7 +1149,7 @@
 <!-- ===== Mobile Floating Bar ===== -->
 <div class="mobile-bar">
   <div class="mobile-bar-inner">
-    <a href="faq.html" class="btn-sm btn-sm-sec" style="background:#f5f5f5;color:var(--text-light)">常见问题</a>
+    <a href="tool/wanhui-zice.html" class="btn-sm btn-sm-sec" style="background:#f5f5f5;color:var(--text-light)">🔍 免费评估</a>
     <a href="about.html" class="btn-sm btn-sm-main" style="background:var(--rose);color:#fff">💬 免费聊聊</a>
   </div>
 </div>
@@ -1271,6 +1274,52 @@ s.parentNode.insertBefore(bp, s);
 })();
 </script>
 <!-- ===== End Floating WeChat CTA ===== -->
+
+<!-- ===== Exit Intent Popup ===== -->
+<style>
+.exit-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:2000;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.exit-overlay.show{display:flex}
+.exit-popup{background:#fff;border-radius:20px;max-width:440px;width:90%;padding:40px 32px;text-align:center;position:relative;animation:exitPop .35s ease}
+@keyframes exitPop{from{transform:scale(0.9);opacity:0}to{transform:scale(1);opacity:1}}
+.exit-popup .close-btn{position:absolute;top:14px;right:14px;width:32px;height:32px;border:none;background:#f5f0f0;border-radius:50%;cursor:pointer;font-size:16px;color:#999;transition:all .2s}
+.exit-popup .close-btn:hover{background:#eee;color:#666}
+.exit-popup h2{font-size:22px;color:#8b3a55;margin-bottom:10px;line-height:1.4}
+.exit-popup p{font-size:15px;color:#6b5b54;line-height:1.8;margin-bottom:24px}
+.exit-popup .exit-btn{display:inline-block;background:linear-gradient(135deg,#b8476e,#8b3a55);color:#fff;padding:14px 36px;border-radius:28px;font-size:16px;font-weight:600;text-decoration:none;box-shadow:0 4px 16px rgba(184,71,110,0.3);transition:all .2s}
+.exit-popup .exit-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(184,71,110,0.4)}
+.exit-popup .exit-note{font-size:12px;color:#bbb;margin-top:16px}
+.exit-popup .exit-wechat{margin-top:16px;padding:12px 20px;background:#fdf2f7;border-radius:12px;font-size:14px;color:#8b3a55}
+.exit-popup .exit-wechat strong{cursor:pointer;border-bottom:1px dashed #8b3a55}
+@media(max-width:768px){.exit-overlay{display:none!important}}
+</style>
+<div class="exit-overlay" id="exitOverlay">
+  <div class="exit-popup">
+    <button class="close-btn" onclick="document.getElementById('exitOverlay').classList.remove('show')">×</button>
+    <h2>等一下——<br>你的情况属于哪种分手？</h2>
+    <p>分手类型判断错了，挽回方法全错。<br>3分钟自测，帮你判断挽回可能性 + 给出对应策略方向。</p>
+    <a href="tool/wanhui-zice.html" class="exit-btn">🔍 开始免费自测</a>
+    <div class="exit-wechat">
+      或者直接加微信聊聊：<strong onclick="navigator.clipboard.writeText('fccj20180520').then(function(){alert('微信号已复制：fccj20180520')})">fccj20180520</strong>
+    </div>
+    <p class="exit-note">首次沟通免费 · 不画饼不逼单 · 7年1000+案例</p>
+  </div>
+</div>
+<script>
+(function(){
+  if(sessionStorage.getItem('exitShown')) return;
+  var overlay = document.getElementById('exitOverlay');
+  document.addEventListener('mouseleave', function(e){
+    if(e.clientY < 10 && !sessionStorage.getItem('exitShown')){
+      overlay.classList.add('show');
+      sessionStorage.setItem('exitShown','1');
+    }
+  });
+  overlay.addEventListener('click', function(e){
+    if(e.target === overlay) overlay.classList.remove('show');
+  });
+})();
+</script>
+<!-- ===== End Exit Intent Popup ===== -->
 
 </body>
 </html>
